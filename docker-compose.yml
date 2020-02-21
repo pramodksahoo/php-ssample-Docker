@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  website:
+    container_name: php-web
+    build:
+      context: ./
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - 8001:80
